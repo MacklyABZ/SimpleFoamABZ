@@ -32,6 +32,8 @@ Group
 Description
     Steady-state solver for incompressible, turbulent flows.
 
+    And this is the second try of JJ ABOUZI
+
     \heading Solver details
     The solver uses the SIMPLE algorithm to solve the continuity equation:
 

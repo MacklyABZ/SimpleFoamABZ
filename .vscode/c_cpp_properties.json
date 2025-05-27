@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "name": "WSL-Ubuntu",
+      "compilerPath": "/usr/bin/gcc",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/home/mackly/OpenFOAM/openfoam/OpenFOAM-v2406/src"
+      ],
+      "defines": [],
+      "cStandard": "gnu11",
+      "cppStandard": "gnu++17",
+      "intelliSenseMode": "gcc-x64"
+    }
+  ],
+  "version": 4
+}

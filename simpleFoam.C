@@ -75,35 +75,34 @@ Description
 
 int main(int argc, char *argv[])
 {
-    argList::addNote
-    (
-        "Steady-state solver for incompressible, turbulent flows."
-    );
+    argList::addNote(
+        "Steady-state solver for incompressible, turbulent flows.");
 
-    #include "postProcess.H"
+#include "postProcess.H"
 
-    #include "addCheckCaseOptions.H"
-    #include "setRootCaseLists.H"
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "createControl.H"
-    #include "createFields.H"
-    #include "initContinuityErrs.H"
+#include "addCheckCaseOptions.H"
+#include "setRootCaseLists.H"
+#include "createTime.H"
+#include "createMesh.H"
+#include "createControl.H"
+#include "createFields.H"
+#include "initContinuityErrs.H"
 
     turbulence->validate();
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-    Info<< "\nStarting time loop\n" << endl;
+    Info << "\nStarting time loop\n"
+         << endl;
 
     while (simple.loop())
     {
-        Info<< "Time = " << runTime.timeName() << nl << endl;
+        Info << "Time = " << runTime.timeName() << nl << endl;
 
         // --- Pressure-velocity SIMPLE corrector
         {
-            #include "UEqn.H"
-            #include "pEqn.H"
+#include "UEqn.H"
+#include "pEqn.H"
         }
 
         laminarTransport.correct();
@@ -114,10 +113,11 @@ int main(int argc, char *argv[])
         runTime.printExecutionTime(Info);
     }
 
-    Info<< "End\n" << endl;
+    Info << "End\n"
+         << endl;
 
     return 0;
 }
 
-
 // ************************************************************************* //
+// ************************************************************************* This is another test//

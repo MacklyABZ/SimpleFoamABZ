@@ -1,5 +1,12 @@
 {
-    "files.associations": {
-        "simpleFoam.C": "cpp"
-    }
+  "files.associations": {
+    "simpleFoam.C": "cpp"
+  },
+  "editor.formatOnSave": true,
+  "terminal.integrated.env.linux": {
+    "FOAM_RUN": "${env:FOAM_RUN}",
+    "FOAM_SRC": "${env:FOAM_SRC}",
+    "PATH": "${env:PATH}"
+  },
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }
